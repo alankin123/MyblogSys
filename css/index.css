@@ -1,0 +1,56 @@
+#left {
+    width: 17%;
+    height: 100vh;
+    float: left;
+    background-color: #404040;
+}
+
+#center {
+    width: 25%;
+    height: 100vh;
+    float: left;
+}
+
+#right {
+    width: 58%;
+    height: 100vh;
+    float: left;
+}
+
+#left .add{
+    line-height: 40px;
+    list-style: none;
+    font-size: 15px;
+    color: #f2f2f2;
+    padding: 0 15px;
+    cursor: pointer;
+}
+#left .itemlist li {
+    position: relative;
+    line-height: 40px;
+    list-style: none;
+    font-size: 15px;
+    color: #f2f2f2;
+    background-color: #404040;
+    padding: 0 15px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: padding .2s;
+    -o-transition: padding .2s;
+    transition: padding .2s;
+}
+
+#left .itemlist li:hover {
+    background-color: #666666;
+}
+
+#left .itemlist li.active {
+    background-color: #666666;
+    border-left: solid 3px #ec7259;
+}
+
+
+
