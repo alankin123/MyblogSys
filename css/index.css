@@ -10,15 +10,15 @@
     width: 25%;
     height: 100vh;
     float: left;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 #right {
     width: 58%;
     height: 100vh;
     float: left;
-    padding-top: 20px;
     position: relative;
+    padding-top: 20px;
 }
 
 #left .add {
@@ -135,6 +135,10 @@
     right: 0;
     top: 95px;
     bottom: 0;
+}
+
+.editormd{
+    margin-bottom: 0!important;
 }
 
 
