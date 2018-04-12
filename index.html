@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>后台管理</title>
-    <script type="text/javascript" src="js/core/jquery-3.2.1.min.js"></script>
     <link type="text/css" rel="stylesheet" href="css/core/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="css/core/common.css">
     <link type="text/css" rel="stylesheet" href="css/index.css">
+
+    <script type="text/javascript" src="js/core/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/core/wangEditor.min.js"></script>
 </head>
 <body>
 <div id="left">
@@ -19,7 +21,28 @@
         <li>标题5</li>
     </ul>
 </div>
-<div id="center" class="bgRed"></div>
-<div id="right" class="bgGray"></div>
+<div id="center">
+    <div class="add"><i class="fa fa-plus"></i><span>新建文章</span></div>
+    <ul class="itemlist">
+        <li class="active f18"><i class="icon"></i>版本自动升级</li>
+        <li class="f18">百度地图集成</li>
+        <li class="f18">友盟分享</li>
+        <li class="f18">极光推送</li>
+        <li class="f18">极光推送</li>
+    </ul>
+</div>
+<div id="right">
+    <input type="text" class="edittitle">
+    <div id="div1" class="toolbar"></div>
+    <div id="div2" class="text"> <!--可使用 min-height 实现编辑区域自动增加高度-->
+        <p>请输入内容</p>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var E = window.wangEditor;
+    var editor1 = new E('#div1', '#div2');  // 两个参数也可以传入 elem 对象，class 选择器
+    editor1.create()
+</script>
 </body>
 </html>
